@@ -1,0 +1,82 @@
+header {
+  background-color: hsl(20, 20%, 15%) !important;
+}
+header .navbar {
+  background-color: hsl(20, 20%, 15%) !important;
+}
+header a {
+  color: #ffffff !important;
+}
+header .navbar-toggler {
+  border-color: #ffffff !important;
+}
+header .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+#studio {
+  min-height: 80vh;
+  background-color: hsl(20, 30%, 35%);
+  color: #ffffff;
+}
+#studio .btn {
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+#studio .btn:hover {
+  background-color: hsl(20, 30%, 25%);
+}
+
+.card {
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+form {
+  max-width: 600px !important;
+  margin: 0 auto !important;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form input,
+form textarea {
+  border: 1px solid #ccc;
+}
+form button {
+  width: 100%;
+  background-color: hsl(20, 30%, 35%) !important;
+  border: none !important;
+  transition: background-color 0.3s ease;
+  margin-bottom: 3em;
+}
+form button:hover {
+  background-color: hsl(20, 30%, 25%) !important;
+}
+
+footer {
+  background-color: hsl(20, 20%, 15%);
+}
+footer div {
+  padding: 0.75em;
+}
+footer h4 {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+footer p {
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+footer hr {
+  border-color: #ffffff;
+  opacity: 0.3;
+  margin: 0 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

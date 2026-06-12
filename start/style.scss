@@ -1,0 +1,104 @@
+// Atelier — Week Project Settimana VI
+// Definisci qui le tue variabili, mixin, override Bootstrap.
+@use "colors" as *;
+
+header {
+  background-color: $header-bg !important;
+
+  .navbar {
+    background-color: $header-bg !important;
+  }
+  a {
+    color: $white !important;
+  }
+  .navbar-toggler {
+    border-color: $white !important;
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+  }
+}
+
+// === Variabili (definisci $brand-primary, $brand-secondary, $radius-base, ecc.) ===
+
+// === Mixin (definisci almeno @mixin card-elevata o equivalente) ===
+
+// === Override Bootstrap (sovrascrivi .btn-primary, .bg-primary, .text-primary col tuo colore brand) ===
+
+// === Stili custom delle sezioni (header sticky, hero, servizi, contatti, footer) ===
+
+#studio {
+  min-height: 80vh;
+  background-color: $brand-secondary;
+  color: $white;
+
+  .btn {
+    color: $white;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+
+    &:hover {
+      background-color: $brand-accent;
+    }
+  }
+}
+.card {
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+}
+
+form {
+  max-width: 600px !important;
+  margin: 0 auto !important;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  input,
+  textarea {
+    border: 1px solid #ccc;
+  }
+
+  button {
+    width: 100%;
+    background-color: $brand-secondary !important;
+    border: none !important;
+    transition: background-color 0.3s ease;
+    margin-bottom: 3em;
+
+    &:hover {
+      background-color: $brand-accent !important;
+    }
+  }
+}
+footer {
+  background-color: $brand-primary;
+  div {
+    padding: 0.75em;
+  }
+
+  h4 {
+    color: $white;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: $white;
+    margin-bottom: 0.25rem;
+  }
+
+  hr {
+    border-color: $white;
+    opacity: 0.3;
+    margin: 0 1rem;
+  }
+}
