@@ -102,3 +102,25 @@ footer {
     margin: 0 1rem;
   }
 }
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+body.dark-mode .card {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+body.dark-mode #contatti {
+  background-color: #1a1a1a !important;
+}
+
+body.dark-mode form input,
+body.dark-mode form textarea,
+body.dark-mode form select {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border-color: #555;
+}
